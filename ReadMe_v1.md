@@ -100,7 +100,7 @@ To improve the model we try to set more detailed analysis on all features as fol
 4.2) SVM, to generalize more we try for classifier__C': [1,3,5]
 
 5) **Results**
-- we find Logistic Regression with C = 0.1 as optimal solution, the acceptable value can be consulted [here]('images/OptimalModel.jpg').
+- we find Logistic Regression with C = 0.1 as optimal solution, the acceptable value can be consulted [here](images/OptimalModel.jpg).
 - we can read that no overfitting are showed and good result for recall at 62%.
 
 
