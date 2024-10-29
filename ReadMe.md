@@ -36,11 +36,16 @@ more information can be read [here](data/bank-additional-names.txt)
 - For categorical features [Features Categorical Frequency Plot](images/FreqFeaturesCategorical.jpg);
 
 3.1) a lot of record classified as "not existent information" for features previous_contact; poutcome.
+
 3.2) the customers are mostly new customers; a small percentage is from past campaigns.
+
 3.3) the age is distributed across a wide range, but most are under 60, but the signed investment percentage upper 60 is higher.
+
 3.4) Classification as "unknown" value present in the features job, marital, education, default, housing, loan.
+
 3.4.1) features with "unknown" value and its impact on target = y - found that it impacts less than 30% of the dataset and does not impact "yes" for the target, so we consider it can be deleted.
 Again, the highest number of non-existent values is for default, but default have just "no" and "unknown" value meaning that if the customer have category default as "yes" is not selected for this compaign, it can be a constraint before of analisys, but we have not data for this, so for our analisys default add just complexity but not value added, we assume that can be dropped.
+
 3.5) from features description in project overview we find out that feature named "duration" is good to use just for benchmarking but not to predict, so maybe it can be disregarded.
 
 
@@ -87,16 +92,25 @@ In the plot [here](images/SimpleModelsTimeTrain.jpg) we can see how is longer SV
 
 To improve the model we try to set more detailed analysis on all features as follow:
 1) correlation analysis for numerical features whit [heatmap](images/corr_NumericalFeat.jpg), on which we select only strong relation with values > 0.65.
+
 2) Cramér's V for chategorical features with [heatmap](images/CramerCategoricalFeat.jpg), on which we select only strong relation with values > 0.65.
+
 3) **Actions to do**:
+
 3.1) for numerical features: we mantain only: context_emp_var_rate; context_cons_conf_idx. *We drop*: context_cons_price_idx; context_euribor3m; context_nr_employed.
+
 3.2) for categorical features: finding strong relation between housing and loan, so we *drop housing* and mantain more generic information with loan.
+
 3.3) As already said *duration can be dropped* for our scope.
+
 3.4) We *drop records with "unknowns"* information;
+
 3.5) We *drop default* column.
 
 4) **Finding optimal model application**: From the results of section Model Comparison we continue to evaluate as model: Logistic Regression and SVM, looking for optimal combination of hyperparametes with grid search cv:
+
 4.1) Logistic Regression: try to set classifier__C': [0.1, 1, 10, 100]
+
 4.2) SVM, to generalize more we try for classifier__C': [1,3,5]
 
 5) **Results**
