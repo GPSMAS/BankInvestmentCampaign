@@ -13,7 +13,7 @@ The data are related to 17 campaigns that occurred between May 2008 and November
 
 The notebook can be accessed via the following link: [View the notebook](progetto_17_1_v2.ipynb).
 
-The project is also available on GitHub: **https://github.com/GPSMAS/ImportantFeatureForCarPrice.git**.
+The project is also available on GitHub: **https://github.com/GPSMAS/BankInvestmentCampaign.git**.
 
 ### Project Overview:
 The project involves analyzing the dataset to identify the best model for classifying the data on target feature incating yes/no for innvestment sign, allowing for the optimization of signed investments for the bank.
