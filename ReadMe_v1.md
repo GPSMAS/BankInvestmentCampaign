@@ -29,7 +29,7 @@ more information can be read [here](data/bank-additional-names.txt)
 ### Data Understanding
 
 1) **null/NaN value**: the result is no null or NaN value
-2) **analyze target variable with a frequency plot** [Target Frequency Plot](images/TargFreqPlot.jpg):from the image we can see that the dataset is really unbalanced
+2) **analyze target variable with a frequency plot** [Target Frequency Plot](images/FreqTarget.jpg):from the image we can see that the dataset is really unbalanced
 
 3) **analyze data by visualization with frequency plot of features** 
 - For numerical features [Features Numerical Frequency Plot](images/FreqFeaturesNumerical.jpg);
